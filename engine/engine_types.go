@@ -44,13 +44,15 @@ type Settings struct {
 	EnableTradeSyncing     bool
 	SyncWorkers            int
 	SyncContinuously       bool
-	SyncTimeout            time.Duration
+	SyncTimeoutREST        time.Duration
+	SyncTimeoutWebsocket   time.Duration
 
 	// Forex settings
 	EnableCurrencyConverter bool
 	EnableCurrencyLayer     bool
 	EnableFixer             bool
 	EnableOpenExchangeRates bool
+	EnableExchangeRateHost  bool
 
 	// Exchange tuning settings
 	EnableExchangeHTTPRateLimiter  bool
